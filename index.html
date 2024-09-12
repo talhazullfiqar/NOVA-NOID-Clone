@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Noid</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navigation-container">
+        <ul class="navigationbar">
+            <li><a href=""><img src="assets/logo-light.png" alt="Logo" class="logo"></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Prices</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- carousel -->
+    <section class="carousel">
+        <div class="carousel-inner">
+            <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
+                checked="checked">
+            <div class="carousel-item">
+                <div class="carousel-text">NOVANOID</div>
+            </div>
+            <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item">
+                <div class="carousel-text">MINIMALISM</div>
+            </div>
+            <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item">
+                <div class="carousel-text">CREATIVE</div>
+            </div>
+            <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+            <label for="carousel-2" class="carousel-control next control-1">›</label>
+            <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+            <label for="carousel-3" class="carousel-control next control-2">›</label>
+            <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+            <label for="carousel-1" class="carousel-control next control-3">›</label>
+            <ol class="carousel-indicators">
+                <li>
+                    <label for="carousel-1" class="carousel-bullet"></label>
+                </li>
+                <li>
+                    <label for="carousel-2" class="carousel-bullet"></label>
+                </li>
+                <li>
+                    <label for="carousel-3" class="carousel-bullet"></label>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- WEB Features -->
+    <section class="featuresDiv">
+        <div class="insidefeatures">
+            <span>🍃</span>
+            <h1>CLEAN THEMES</h1>
+            <p>Nulla fringilla urna ac urna volutpat, quis congue massa dignissim. Suspendisse quis orci id dolor
+                vehicula
+                porta quis in dolor. Phasellus volutpat metus.</p>
+        </div>
+        <div class="insidefeatures">
+            <span>📺</span>
+            <h1>FULLY RESPONSIVE</h1>
+            <p>Ut magna diam, placerat ac diam et, ornare volutpat libero. Curabitur erat nisl, sollicitudin sit amet
+                rhoncus interdum, adipiscing aliquet est.</p>
+        </div>
+        <div class="insidefeatures">
+            <span>👁️</span>
+            <h1>PIXELS PERFECT</h1>
+            <p>Phasellus eget massa quam. Cras mi purus, accumsan id pretium sed, faucibus quis diam. Maecenas
+                aliquet,lacus a porttitor porta, sapien.</p>
+        </div>
+        <div class="insidefeatures">
+            <span>💗</span>
+            <h1>GOOGLE FONTS</h1>
+            <p>Etiam sollicitudin tempus quam, at lacinia urna rutrum sed. Integer quis arcu quis metus sagittis
+                feugiat. Nulla facilisi. Integer molestie nec justo in convallis.</p>
+        </div>
+        <div class="insidefeatures">
+            <span>👨‍💻</span>
+            <h1>STRUCTURED CODE</h1>
+            <p>Suspendisse nec lacus id urna mollis convallis. Sed risus massa, sodales sed porta eu, elementum ac
+                magna. Phasellus et suscipit ipsum.</p>
+        </div>
+        <div class="insidefeatures">
+            <span>💡</span>
+            <h1>CREATIVE IDEAS</h1>
+            <p>Aenean luctus, nisl et congue commodo, ligula neque fringilla lorem, quis vehicula est leo et tortor. Cum
+                sociis natoque penatibus et magnis dis.</p>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery-container">
+        <div class="works-heading-container">
+            <h1>OUR WORKS</h1>
+            <p>Praesent lacinia sem sed risus consectetur, et volutpat nulla bibendum.</p>
+        </div>
+        <div class="gallery__menu">
+            <button id="all" class="buttonClass active" onclick="gallerylist()">All</button>
+            <button id="travel" class="buttonClass" onclick="gallerylist()">Travel</button>
+            <button id="road" class="buttonClass" onclick="gallerylist()">Road</button>
+            <button id="mountain" class="buttonClass" onclick="gallerylist()">Mountain</button>
+            <button id="nature" class="buttonClass" onclick="gallerylist()">Nature</button>
+        </div>
+
+        <div class="gallery__content gallery__items" id="gallery-content">
+            <div class="row1Column1-2-3">
+                <div class="gallery__item" data-gallery="travel nature">
+                    <img src="assets/gallery/work-1.jpg" alt="Work 1">
+                    <div class="overlay">
+                        <p>Overlay Text</p>
+                    </div>
+                </div>
+                <div class="gallery__item" data-gallery="road mountain">
+                    <img src="assets/gallery/work-2.jpg" alt="Work 2">
+                    <div class="overlay">
+                        <p>Overlay Text</p>
+                    </div>
+                </div>
+                <div class="gallery__item" data-gallery="travel mountain">
+                    <img src="assets/gallery/work-3.jpg" alt="Work 3">
+                    <div class="overlay">
+                        <p>Overlay Text</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row2Column1-2-3">
+                <div class="gallery__item" data-gallery="road nature">
+                    <img src="assets/gallery/work-4.jpg" alt="Work 4">
+                    <div class="overlay">
+                        <p>Overlay Text</p>
+                    </div>
+                </div>
+                <div class="gallery__item" data-gallery="travel mountain">
+                    <img src="assets/gallery/work-5.jpg" alt="Work 5">
+                    <div class="overlay">
+                        <p>Overlay Text</p>
+                    </div>
+                </div>
+                <div class="gallery__item" data-gallery="mountain nature">
+                    <img src="assets/gallery/work-6.jpg" alt="Work 6">
+                    <div class="overlay">
+                        <p>Overlay Text</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row3Column1-2-3">
+                <div class="gallery__item" data-gallery="nature road">
+                    <img src="assets/gallery/work-7.jpg" alt="Work 7">
+                    <div class="overlay">
+                        <p>Overlay Text</p>
+                    </div>
+                </div>
+                <div class="gallery__item" data-gallery="mountain nature">
+                    <img src="assets/gallery/work-8.jpg" alt="Work 8">
+                    <div class="overlay">
+                        <p>Overlay Text</p>
+                    </div>
+                </div>
+                <div class="gallery__item" data-gallery="travel road">
+                    <img src="assets/gallery/work-9.jpg" alt="Work 9">
+                    <div class="overlay">
+                        <p>Overlay Text</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Services -->
+    <section class="services-container">
+        <div class="works-heading-container">
+            <h1>OUR SERVICES</h1>
+            <p>Praesent lacinia sem sed risus consectetur, et volutpat nulla bibendum.</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-1 inside-services">
+                <span>👨‍💼</span>
+                <h1>GET CLIENT</h1>
+                <p>Fusce varius pharetra nulla, eget porttitor orci. Nulla facilisi. Quisque pharetra enim nulla, a
+                    laoreet dolor malesuada ac. Donec at ipsum eu ante pellentesque.</p>
+            </div>
+            <div class="service-2 inside-services">
+                <span>⚙️</span>
+                <h1>EXECUTE ORDER</h1>
+                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus
+                    blandit dolor sit amet eros aliquam suscipit.</p>
+            </div>
+            <div class="service-3 inside-services">
+                <span>👍</span>
+                <h1>Enjoy Result</h1>
+                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus
+                    blandit dolor sit amet eros aliquam suscipit.</p>
+            </div>
+            <div class="service-4 inside-services">
+                <span>👁️</span>
+                <h1>PIXELS PERFECT</h1>
+                <p>Fusce varius pharetra nulla, eget porttitor orci. Nulla facilisi. Quisque pharetra enim nulla, a
+                    laoreet dolor malesuada ac. Donec at ipsum eu ante pellentesque.</p>
+            </div>
+            <div class="service-5 inside-services">
+                <span>⚗️</span>
+                <h1>LEBORATORY TESTS</h1>
+                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus
+                    blandit dolor sit amet eros aliquam suscipit.</p>
+            </div>
+            <div class="service-6 inside-services">
+                <span>💬</span>
+                <h1>BIG COMMUNITY</h1>
+                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus
+                    blandit dolor sit amet eros aliquam suscipit.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax grid -->
+    <section class="parallax-container">
+        <div class="parallax-data">
+            <h1>WE<span>💓</span>PARALLAX BACKGROUNDS.</h1>
+            <P>Ut consectetur eros vitae mi imperdiet, nec ullamcorper risus dignissim. Fusce ac
+                consectetur ligula, ut luctus tellus. Nulla in orci pharetra, placerat magna nec, pretium.</P>
+            <button><span>👀</span>READ MORE</button>
+        </div>
+    </section>
+
+    <!-- Teams -->
+    <section class="team-container">
+        <div class="works-heading-container">
+            <h1>OUR TEAM</h1>
+            <p>Praesent lacinia sem sed risus consectetur, et volutpat nulla bibendum.</p>
+        </div>
+        <div class="team-grids">
+            <div class="team-member">
+                <div class="team-member-content">
+                    <img src="assets/teammembers/member-1.jpg" alt="">
+                    <div class="hover-overlay">
+                        <div class="buttons">
+                            <button>F</button>
+                            <button>T</button>
+                            <button>W</button>
+                        </div>
+                    </div>
+                </div>
+                <h1>russel j. span</h1>
+                <p>Founder</p>
+            </div>
+            <div class="team-member">
+                <div class="team-member-content">
+                    <img src="assets/teammembers/member-2.jpg" alt="">
+                    <div class="hover-overlay">
+                        <div class="buttons">
+                            <button>F</button>
+                            <button>T</button>
+                            <button>W</button>
+                        </div>
+                    </div>
+                </div>
+                <h1>etta r. carter</h1>
+                <p>Manager</p>
+            </div>
+            <div class="team-member">
+                <div class="team-member-content">
+                    <img src="assets/teammembers/member-3.jpg" alt="">
+                    <div class="hover-overlay">
+                        <div class="buttons">
+                            <button>F</button>
+                            <button>T</button>
+                            <button>W</button>
+                        </div>
+                    </div>
+                </div>
+                <h1>ronald j. smith</h1>
+                <p>Coder</p>
+            </div>
+            <div class="team-member">
+                <div class="team-member-content">
+                    <img src="assets/teammembers/member-4.jpg" alt="">
+                    <div class="hover-overlay">
+                        <div class="buttons">
+                            <button>F</button>
+                            <button>T</button>
+                            <button>W</button>
+                        </div>
+                    </div>
+                </div>
+                <h1>patrick j. lames</h1>
+                <p>Developer</p>
+            </div>
+            <div class="team-member">
+                <div class="team-member-content">
+                    <img src="assets/teammembers/member-5.jpg" alt="">
+                    <div class="hover-overlay">
+                        <div class="buttons">
+                            <button>F</button>
+                            <button>T</button>
+                            <button>W</button>
+                        </div>
+                    </div>
+                </div>
+                <h1>tamara r. burns</h1>
+                <p>Coordinator</p>
+            </div>
+            <div class="team-member">
+                <div class="team-member-content">
+                    <img src="assets/teammembers/member-6.jpg" alt="">
+                    <div class="hover-overlay">
+                        <div class="buttons">
+                            <button>F</button>
+                            <button>T</button>
+                            <button>W</button>
+                        </div>
+                    </div>
+                </div>
+                <h1>jorge e. marr</h1>
+                <p>Support</p>
+            </div>
+        </div>
+        <hr class="hr">
+        <div class="counter-container">
+            <div class="counter">
+                <span>🫂</span>
+                <h1 id="clients-counter">0</h1>
+                <p>CLIENTS</p>
+            </div>
+            <div class="counter">
+                <span>👜</span>
+                <h1 id="projects-counter">0</h1>
+                <p>PROJECTS</p>
+            </div>
+            <div class="counter">
+                <span>🌐</span>
+                <h1 id="countries-counter">0</h1>
+                <p>COUNTRIES</p>
+            </div>
+            <div class="counter">
+                <span>🏢</span>
+                <h1 id="offices-counter">0</h1>
+                <p>OFFICES</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- BUY Services -->
+    <section class="buy-container">
+        <div class="works-heading-container">
+            <h1>HOW MANY</h1>
+            <p>Praesent lacinia sem sed risus consectetur, et volutpat nulla bibendum.</p>
+        </div>
+        <div class="card-container">
+            <div class="pricing-card">
+                <div class="card-header">
+                    <h2>BASIC</h2>
+                </div>
+                <div class="card-price">
+                    <h1>$29.99</h1>
+                </div>
+                <ul class="features">
+                    <li>2 Domains</li>
+                    <li>5GB Hosting</li>
+                    <li>Limited Accounts</li>
+                    <li>FTP</li>
+                    <li>Full Support</li>
+                </ul>
+                <div class="card-footer">
+                    <button>
+                        <i class="fas fa-wallet"></i>
+                        <span class="button-text">BUY NOW</span>
+                    </button>
+                </div>
+            </div>
+            <div class="pricing-card">
+                <div class="card-header">
+                    <h2>STANDARD</h2>
+                </div>
+                <div class="card-price">
+                    <h1>$59.99</h1>
+                </div>
+                <ul class="features">
+                    <li>5 Domains</li>
+                    <li>25GB Hosting</li>
+                    <li>Unlimited Accounts</li>
+                    <li>FTP</li>
+                    <li>Full Support</li>
+                </ul>
+                <div class="card-footer">
+                    <button>
+                        <i class="fas fa-wallet"></i>
+                        <span class="button-text">BUY NOW</span>
+                    </button>
+                </div>
+            </div>
+            <div class="pricing-card">
+                <div class="card-header">
+                    <h2>PRO</h2>
+                </div>
+                <div class="card-price">
+                    <h1>$99.99</h1>
+                </div>
+                <ul class="features">
+                    <li>40 Domains</li>
+                    <li>500GB Hosting</li>
+                    <li>Unlimited Accounts</li>
+                    <li>FTP + SSH</li>
+                    <li>24/7 Full Support</li>
+                </ul>
+                <div class="card-footer">
+                    <button>
+                        <i class="fas fa-wallet"></i>
+                        <span class="button-text">BUY NOW</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blogs -->
+    <section class="blog-container">
+        <div class="works-heading-container">
+            <h1>OUR BLOGS</h1>
+            <p>Praesent lacinia sem sed risus consectetur, et volutpat nulla bibendum.</p>
+        </div>
+        <div class="blog-gird">
+            <div class="blog">
+                <h1><a href="">Ut lorem est porttitor eget fermentum</a></h1>
+                <h6>24 June, 2014</h6>
+                <p>Aenean odio massa, mattis et vestibulum ac, iaculis non lacus. Pellentesque auctor arcu vulputate est
+                    rutrum egestas.</p>
+                <button>READ MORE</button>
+            </div>
+            <div class="blog">
+                <h1><a href="">Praesent a eros at elit convallis consequat</a></h1>
+                <h6>20 June, 2014</h6>
+                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras
+                    venenatis ipsum sit amet dictum ornare.</p>
+                <button>READ MORE</button>
+            </div>
+            <div class="blog">
+                <h1><a href="">Vivamus nisl urna facilisis semper</a></h1>
+                <h6>30 June, 2014</h6>
+                <p>Vivamus posuere mi sed diam tincidunt lobortis. Aliquam lobortis turpis eu nulla dignissim viverra.
+                    Vivamus ornare, nibh in aliquam porttitor, orci velit.</p>
+                <button>READ MORE</button>
+            </div>
+            <div class="blog">
+                <h1><a href="">Morbi odio orci accumsan ut convallis nec</a></h1>
+                <h6>11 June, 2014</h6>
+                <p>Quisque malesuada velit vel sapien sollicitudin aliquam. Sed et consequat purus. Donec lorem ante,
+                    ornare non tincidunt sit amet, ornare vitae neque.</p>
+                <button>READ MORE</button>
+            </div>
+            <div class="blog">
+                <h1><a href="">Cras rutrum enim at magna lobortis tempus</a></h1>
+                <h6>26 June, 2014</h6>
+                <p>Cras sed mattis massa. Vestibulum tempor iaculis justo, ac placerat felis tempus at. Sed ac consequat
+                    tortor. Aliquam nisi ipsum, elementum.</p>
+                <button>READ MORE</button>
+            </div>
+            <div class="blog">
+                <h1><a href="">Nullam ornare tellus vel metus suscipit</a></h1>
+                <h6>27 June, 2014</h6>
+                <p>Nulla facilisi. Sed mollis dolor leo, nec fringilla ipsum tristique eget. Mauris eget dignissim
+                    magna. Suspendisse potenti. Integer condimentum congue.</p>
+                <button>READ MORE</button>
+            </div>
+        </div>
+        <div class="readall-button">
+            <button class="readbutton"><span>👁️</span>READ ALL POSTS</button>
+        </div>
+
+    </section>
+    <!-- Contact us -->
+    <section class="contactus-container">
+        <div class="works-heading-container">
+            <h1>CONTACT US</h1>
+            <p>Praesent lacinia sem sed risus consectetur, et volutpat nulla bibendum.</p>
+        </div>
+        <div class="details-grid">
+            <div class="detail">
+                <h3>ADDRESS</h3>
+                <p>1496 Farland Street</p>
+                <p>Chicago, IL 60606</p>
+            </div>
+            <div class="detail">
+                <h3>E-MAIL</h3>
+                <a href="">support@example.com</a>
+                <a href="">maredwinz@gmail.com</a>
+            </div>
+            <div class="detail">
+                <h3>PHONE</h3>
+                <p>773-920-3653</p>
+                <p>985-796-6997</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row input-container">
+                <div class="col-md-6 col-sm-12">
+                    <div class="styled-input">
+                        <input type="text" required />
+                        <label>NAME</label>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="styled-input" style="float:right;">
+                        <input type="text" required />
+                        <label>E-MAIL</label>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="styled-input wide">
+                            <input type="text" required />
+                            <label>Phone Number</label>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-xs-12">
+                    <div class="styled-input wide">
+                        <textarea required></textarea>
+                        <label>Message</label>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="btn-lrg submit-btn">Send Message</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo -->
+            <div class="footer-logo">
+                <img src="assets/logo-light.png" alt="">
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-dribbble"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-tumblr"></i></a>
+            </div>
+            <!-- Copyright Text -->
+            <div class="footer-copyright">
+                <p>Novanoid © 2014.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Java Script Codes -->
+    <script src="javascript/main.js" type="module"></script>
+</body>
+
+</html>
