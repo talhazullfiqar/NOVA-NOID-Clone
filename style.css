@@ -813,18 +813,13 @@ span {
 .detail p {
     margin-bottom: 0.3rem;
 }
-
-input:focus~label,
-textarea:focus~label,
-input:valid~label,
-textarea:valid~label {
+.mylabel {
     font-size: 0.75em;
     color: #999;
     top: -5px;
     -webkit-transition: all 0.225s ease;
     transition: all 0.225s ease;
 }
-
 .styled-input {
     float: left;
     width: 293px;
